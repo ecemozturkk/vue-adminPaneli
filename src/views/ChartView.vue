@@ -19,9 +19,8 @@
           "
         >
           <LineChart />
+          <!-- <br> -->
           <DonutChart />
-          <BarChart />
-          <AreaChart />
         </div>
       </div>
     </div>
@@ -32,6 +31,5 @@
 import Breadcrumb from "../partials/Breadcrumb.vue";
 import DonutChart from "@/components/charts/DonutChart.vue";
 import LineChart from "@/components/charts/LineChart.vue";
-import BarChart from "../components/charts/BarChart.vue";
-import AreaChart from "../components/charts/AreaChart.vue";
+
 </script>
