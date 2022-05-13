@@ -50,17 +50,17 @@
             pl-10
             pr-4
             py-2
-            text-indigo-600
-            border-gray-200
+            text-black-600
+            border-blue-200
             rounded-md
             sm:w-64
-            focus:border-indigo-600
+            focus:border-blue-600
             focus:ring
             focus:ring-opacity-40
-            focus:ring-indigo-500
+            focus:ring-opacity-500
           "
           type="text"
-          placeholder="Search"
+          placeholder="Arama.."
         />
       </div>
     </div>
@@ -282,7 +282,7 @@
                   d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
                 />
               </svg>
-              Profile</a
+              Profil</a
             >
             <a
               href="#"
@@ -314,7 +314,7 @@
                   d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
                 />
               </svg>
-              Settings</a
+              Ayarlar</a
             >
             <router-link
               to="/"
@@ -341,7 +341,7 @@
                   d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
                 />
               </svg>
-              Log out</router-link
+              Çıkış Yap</router-link
             >
           </div>
         </transition>
