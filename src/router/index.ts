@@ -49,8 +49,11 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: "/charts",
-    name: "Chart",
-    component: Chart,
+    name: "Grafikler",
+    component: Chart
+    // path: "/charts",
+    // name: "Chart",
+    // component: Chart,
   },
   {
     path: "/blank",

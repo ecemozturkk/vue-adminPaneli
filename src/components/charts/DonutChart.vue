@@ -23,17 +23,6 @@ const options = ref({
             fontFamily: 'Verdana'
           },
         },
-  responsive: [{
-          breakpoint: 480,
-          options: {
-            chart: {
-              width: 1000
-            },
-            legend: {
-              position: 'top'
-            }
-          }
-        }]
         
 });
 const series = ref([44, 55, 41, 17, 15]);
