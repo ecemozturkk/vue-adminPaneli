@@ -92,7 +92,7 @@
               <div>
                 <label class="text-gray-700" for="username">Username</label>
                 <input
-                  class="w-full mt-2 border-gray-200 rounded-md focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
+                  class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
                   type="text"
                   v-model="user.username"
                 />
