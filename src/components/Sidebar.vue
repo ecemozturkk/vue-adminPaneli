@@ -209,12 +209,12 @@
 
           <span class="mx-4">Hesap İşlemleri</span>
         </router-link>
+        <router-link
         
-        <a
-          target="_blank"
+          
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
-          :class="[$route.name === 'Blank' ? activeClass : inactiveClass]"
-          href="https://github.com/tal7aouy"
+          :class="[$route.name === 'Contact' ? activeClass : inactiveClass]"
+          to="/contact"
         >
           <svg
             class="fill-blue-500"
@@ -227,7 +227,8 @@
             />
           </svg>
           <span class="mx-4">İletişim</span>
-        </a>
+          </router-link>
+        
       </nav>
     </div>
   </div>
