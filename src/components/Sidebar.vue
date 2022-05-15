@@ -95,7 +95,7 @@
             />
           </svg>
 
-          <span class="mx-4">UI Elements</span>
+          <span class="mx-4">Ürünler</span>
         </router-link>
 
         <router-link
@@ -114,7 +114,7 @@
             />
           </svg>
 
-          <span class="mx-4">Tables</span>
+          <span class="mx-4">Site Bilgileri</span>
         </router-link>
 
         <router-link
@@ -133,7 +133,7 @@
             />
           </svg>
 
-          <span class="mx-4">Forms</span>
+          <span class="mx-4">Kategoriler</span>
         </router-link>
 
         <router-link
@@ -152,7 +152,7 @@
             />
           </svg>
 
-          <span class="mx-4">Cards</span>
+          <span class="mx-4">İndirimler</span>
         </router-link>
 
         <router-link
@@ -171,7 +171,7 @@
             />
           </svg>
 
-          <span class="mx-4">Modal</span>
+          <span class="mx-4">Sipariş Takibi</span>
         </router-link>
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
