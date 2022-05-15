@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Breadcrumb -->
-    <Breadcrumb breadcrumb="Forms" />
+    <!-- <Breadcrumb breadcrumb="Forms" /> -->
 
     <div class="mt-4">
       <h4 class="text-gray-600">Model Form</h4>
@@ -146,7 +146,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import Breadcrumb from '../partials/Breadcrumb.vue'
+//import Breadcrumb from '../partials/Breadcrumb.vue'
 
 interface User {
   username: string

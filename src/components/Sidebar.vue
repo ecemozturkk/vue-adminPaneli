@@ -73,7 +73,7 @@
             />
           </svg>
 
-          <span class="mx-4">Dashboard</span>
+          <span class="mx-4">Ana Sayfa</span>
         </router-link>
         <!-- <p class="pl-4 my-2 text-xs font-semibold mb-4 text-gray-400">
           Examples

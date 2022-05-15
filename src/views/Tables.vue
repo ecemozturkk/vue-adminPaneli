@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Breadcrumb -->
-    <Breadcrumb breadcrumb="Tables" />
+    <!-- <Breadcrumb breadcrumb="Tables" /> -->
 
     <div class="mt-4">
       <h4 class="text-gray-600">Simple Table</h4>
@@ -413,5 +413,5 @@
 <script setup lang="ts">
 import { useTableData } from '../hooks/useTableData'
 const { simpleTableData, paginatedTableData, wideTableData } = useTableData()
-import Breadcrumb from '../partials/Breadcrumb.vue'
+// import Breadcrumb from '../partials/Breadcrumb.vue'
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Breadcrumb -->
-    <Breadcrumb breadcrumb="charts" />
+    <!-- <Breadcrumb breadcrumb="charts" /> -->
 
     <div class="mt-4">
       <h4 class="text-gray-600" style="font-size:40px;">GRAFIKLER</h4>
@@ -28,7 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import Breadcrumb from "../partials/Breadcrumb.vue";
+// import Breadcrumb from "../partials/Breadcrumb.vue";
 import DonutChart from "@/components/charts/DonutChart.vue";
 import LineChart from "@/components/charts/LineChart.vue";
 

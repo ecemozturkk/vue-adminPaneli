@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Breadcrumb breadcrumb="" />
+    <!-- <Breadcrumb breadcrumb="" /> -->
     <!--Banner get you to github repo-->
     <Banner />
     <div class="mt-4">
@@ -150,7 +150,7 @@
                     bg-gray-50
                   "
                 >
-                  ÜRÜN
+                  ID
                 </th>
                 <th
                   class="
@@ -166,7 +166,7 @@
                     bg-gray-50
                   "
                 >
-                  KATEGORI
+                  Urun Adi
                 </th>
                 <th
                   class="
@@ -182,7 +182,7 @@
                     bg-gray-50
                   "
                 >
-                  STOK DURUMU
+                  Urun Gorseli
                 </th>
                 <th
                   class="
@@ -198,34 +198,86 @@
                     bg-gray-50
                   "
                 >
-                  FİYAT
+                  Indirimsiz Fiyat
                 </th>
+                <th
+                  class="
+                    px-6
+                    py-3
+                    text-xs
+                    font-medium
+                    leading-4
+                    tracking-wider
+                    text-left text-gray-500
+                    uppercase
+                    border-b border-gray-200
+                    bg-gray-50
+                  "
+                >
+                  Indirimli Fiyat
+                </th>
+                <th
+                  class="
+                    px-6
+                    py-3
+                    text-xs
+                    font-medium
+                    leading-4
+                    tracking-wider
+                    text-left text-gray-500
+                    uppercase
+                    border-b border-gray-200
+                    bg-gray-50
+                  "
+                >
+                  Stok Sayisi
+                </th>
+                <th
+                  class="
+                    px-6
+                    py-3
+                    text-xs
+                    font-medium
+                    leading-4
+                    tracking-wider
+                    text-left text-gray-500
+                    uppercase
+                    border-b border-gray-200
+                    bg-gray-50
+                  "
+                >
+                  Youtube URL
+                </th>
+                <th
+                  class="
+                    px-6
+                    py-3
+                    text-xs
+                    font-medium
+                    leading-4
+                    tracking-wider
+                    text-left text-gray-500
+                    uppercase
+                    border-b border-gray-200
+                    bg-gray-50
+                  "
+                >
+                  Urun Aciklamasi
+                </th>
+
                 <th class="px-6 py-3 border-b border-gray-200 bg-gray-50"></th>
               </tr>
             </thead>
 
             <tbody class="bg-white">
-               <tr v-for="(u, index) in users" :key="index">
+              <tr v-for="product in products" :key="product.productId">
+                <!-- <tr v-for="(u, index) in users" :key="index"> -->
+
                 <td
                   class="px-6 py-4 border-b border-gray-200 whitespace-nowrap"
                 >
-                  <div class="flex items-center">
-                    <div class="flex-shrink-0 w-10 h-10">
-                      <img
-                        class="w-10 h-10 rounded-full"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                        alt=""
-                      />
-                    </div>
-
-                    <div class="ml-4">
-                      <div class="text-sm font-medium leading-5 text-gray-900">
-                        {{ u.name}}
-                      </div>
-                      <div class="text-sm leading-5 text-gray-500">
-                        {{ u.email }}
-                      </div>
-                    </div>
+                  <div class="text-sm leading-5 text-gray-900">
+                    {{ product.productId }}
                   </div>
                 </td>
 
@@ -233,10 +285,17 @@
                   class="px-6 py-4 border-b border-gray-200 whitespace-nowrap"
                 >
                   <div class="text-sm leading-5 text-gray-900">
-                    {{ u.title }}
+                    {{ product.productName }}
                   </div>
-                  <div class="text-sm leading-5 text-gray-500">
-                    {{ u.title2 }}
+                  <div class=" inline-flex
+                      px-5
+                      text-xs
+                      font-semibold
+                      leading-5
+                      text-green-800
+                      bg-sky-200
+                      rounded-full">
+                    {{ product.categoryName }}
                   </div>
                 </td>
 
@@ -251,13 +310,38 @@
                       font-semibold
                       leading-5
                       text-green-800
-                      bg-green-100
                       rounded-full
                     "
-                    >{{ u.status }}</span
+                    >{{ product.productImage }}</span
                   >
                 </td>
 
+                <td
+                  class="
+                    px-8
+                    py-4
+                    text-sm
+                    leading-5
+                    text-red-700
+                    border-b border-gray-200
+                    whitespace-nowrap
+                  "
+                >
+                  {{ product.priceWithoutDiscount }}
+                </td>
+                <td
+                  class="
+                    px-8
+                    py-4
+                    text-sm
+                    leading-5
+                    text-green-700
+                    border-b border-gray-200
+                    whitespace-nowrap
+                  "
+                >
+                  {{ product.priceWithDiscount }}
+                </td>
                 <td
                   class="
                     px-6
@@ -269,9 +353,34 @@
                     whitespace-nowrap
                   "
                 >
-                  {{ u.role }}
+                  {{ product.stock }}
                 </td>
-
+                <td
+                  class="
+                    px-6
+                    py-4
+                    text-sm
+                    leading-5
+                    text-gray-500
+                    border-b border-gray-200
+                    whitespace-nowrap
+                  "
+                >
+                  <a class="inline-flex items-center h-8 px-4 m-2 text-sm text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800" :href=product.youtubeUrl>Link</a>
+                </td>
+                <td
+                  class="
+                    px-6
+                    py-4
+                    text-sm
+                    leading-5
+                    text-gray-500
+                    border-b border-gray-200
+                    whitespace-nowrap
+                  "
+                >
+                  {{ product.productDescription }}
+                </td>
                 <td
                   class="
                     px-6
@@ -332,10 +441,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import axios from "axios";
 import Banner from "../partials/Banner.vue";
-import Breadcrumb from "../partials/Breadcrumb.vue";
+//import Breadcrumb from "../partials/Breadcrumb.vue";
 interface User {
   name: string;
   email: string;
@@ -345,7 +454,6 @@ interface User {
   role: string;
 }
 
-
 const testUser: User = {
   name: "Ecem Doe",
   email: "john@example.com",
@@ -354,14 +462,15 @@ const testUser: User = {
   status: "Active",
   role: "Owner",
 };
+const products = ref([]);
+onMounted(async () => {
+  await axios
+    .get("http://kozmosapi-001-site1.itempurl.com/api/Products")
+    .then((response) => {
+      products.value = response.data;
+    });
+  console.log(products);
+});
 
 const users = ref<User[]>([...Array(10).keys()].map(() => testUser));
-
-// export default{
-//   setup() {
-//     const products = ref(null)
-//     axios.get('http://kozmosapi-001-site1.itempurl.com/api/Products').then(data => products.value = data);
-//     return {products}
-//   }
-// }
 </script>

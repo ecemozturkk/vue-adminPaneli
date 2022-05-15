@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Breadcrumb -->
-    <Breadcrumb breadcrumb="Blank" />
+    <!-- <Breadcrumb breadcrumb="Blank" /> -->
 
     <div class="mt-8">
       <h4 class="text-gray-600" style="font-size: 40px">Hesap İşlemleri</h4>
@@ -159,7 +159,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import Breadcrumb from "../partials/Breadcrumb.vue";
+// import Breadcrumb from "../partials/Breadcrumb.vue";
 interface User {
   username: string;
   email: string;

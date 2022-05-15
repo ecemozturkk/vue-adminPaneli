@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Breadcrumb -->
-    <Breadcrumb breadcrumb="Contact" />
+    <!-- <Breadcrumb breadcrumb="Contact" /> -->
     <table class="table">
       <thead>
         <tr>
@@ -27,7 +27,7 @@
 import { ref, onMounted } from "vue";
 import axios from "axios";
 
-import Breadcrumb from "../partials/Breadcrumb.vue";
+// import Breadcrumb from "../partials/Breadcrumb.vue";
 
 const products = ref([]);
 onMounted(async () => {
