@@ -205,7 +205,7 @@
             </thead>
 
             <tbody class="bg-white">
-              <tr v-for="(u, index) in users" :key="index">
+               <tr v-for="(u, index) in users" :key="index">
                 <td
                   class="px-6 py-4 border-b border-gray-200 whitespace-nowrap"
                 >
@@ -333,6 +333,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
+import axios from "axios";
 import Banner from "../partials/Banner.vue";
 import Breadcrumb from "../partials/Breadcrumb.vue";
 interface User {
@@ -355,4 +356,12 @@ const testUser: User = {
 };
 
 const users = ref<User[]>([...Array(10).keys()].map(() => testUser));
+
+// export default{
+//   setup() {
+//     const products = ref(null)
+//     axios.get('http://kozmosapi-001-site1.itempurl.com/api/Products').then(data => products.value = data);
+//     return {products}
+//   }
+// }
 </script>

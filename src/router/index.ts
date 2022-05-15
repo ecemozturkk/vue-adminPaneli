@@ -8,7 +8,7 @@ import Modal from "../views/Modal.vue";
 import Chart from "../views/ChartView.vue";
 import Card from "../views/CardView.vue";
 import Blank from "../views/BlankView.vue";
-import NotFound from "../views/NotFound.vue";
+import Contact from "../views/Contact.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -60,7 +60,13 @@ const routes: Array<RouteRecordRaw> = [
     name: "Blank",
     component: Blank,
   },
-  { path: "/:pathMatch(.*)*", component: NotFound },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: Contact,
+  },
+
+  // { path: "/:pathMatch(.*)*", component: NotFound },
 ];
 
 const router = createRouter({
