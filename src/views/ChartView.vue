@@ -31,5 +31,18 @@
 // import Breadcrumb from "../partials/Breadcrumb.vue";
 import DonutChart from "@/components/charts/DonutChart.vue";
 import LineChart from "@/components/charts/LineChart.vue";
+//import { ref, onMounted } from "vue";
+
+import axios from "axios";
+
+// const products = ref([]);
+// onMounted(async () => {
+//   await axios
+//     .get("http://kozmosapi-001-site1.itempurl.com/api/Products")
+//     .then((response) => {
+//       products.value = response.data;
+//     });
+//   console.log(products);
+// });
 
 </script>

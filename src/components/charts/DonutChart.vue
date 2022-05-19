@@ -1,5 +1,5 @@
-<template>
-  <div>
+<template >
+  <div >
     <apexchart
       width="650"
       type="donut"
@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
+import { ref} from "vue";
 const options = ref({
   labels: ['Plak', 'Tablo', 'Giyim', 'Fotoğraf Makinesi', 'Pikap'],
   
@@ -23,7 +23,25 @@ const options = ref({
             fontFamily: 'Verdana'
           },
         },
+  responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 1000
+            },
+            legend: {
+              position: 'top'
+            }
+          }
+        }]
         
 });
 const series = ref([44, 55, 41, 17, 15]);
-</script>
+</script> 
+
+
+
+
+
+
+

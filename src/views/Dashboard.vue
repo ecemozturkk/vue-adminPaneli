@@ -287,14 +287,18 @@
                   <div class="text-sm leading-5 text-gray-900">
                     {{ product.productName }}
                   </div>
-                  <div class=" inline-flex
+                  <div
+                    class="
+                      inline-flex
                       px-5
                       text-xs
                       font-semibold
                       leading-5
                       text-green-800
                       bg-sky-200
-                      rounded-full">
+                      rounded-full
+                    "
+                  >
                     {{ product.categoryName }}
                   </div>
                 </td>
@@ -366,7 +370,24 @@
                     whitespace-nowrap
                   "
                 >
-                  <a class="inline-flex items-center h-8 px-4 m-2 text-sm text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800" :href=product.youtubeUrl>Link</a>
+                  <a
+                    class="
+                      inline-flex
+                      items-center
+                      h-8
+                      px-4
+                      m-2
+                      text-sm text-indigo-100
+                      transition-colors
+                      duration-150
+                      bg-indigo-700
+                      rounded-lg
+                      focus:shadow-outline
+                      hover:bg-indigo-800
+                    "
+                    :href="product.youtubeUrl"
+                    >Link</a
+                  >
                 </td>
                 <td
                   class="
@@ -395,13 +416,15 @@
                 >
                   <div class="flex justify-around">
                     <span class="text-yellow-500 flex justify-center">
-                      <a href="#" class="mx-2 px-2 rounded-md"
+                      <a href="" class="mx-2 px-2 rounded-md" @click="deleteItem(product.productId)"
                         ><svg
                           xmlns="http://www.w3.org/2000/svg"
                           class="h-5 w-5 text-green-700"
                           viewBox="0 0 20 20"
                           fill="currentColor"
+                          
                         >
+                
                           <path
                             d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"
                           />
@@ -455,7 +478,7 @@ interface User {
 }
 
 const testUser: User = {
-  name: "Ecem Doe",
+  name: "John Doe",
   email: "john@example.com",
   title: "Software Engineer",
   title2: "Web dev",
@@ -471,6 +494,15 @@ onMounted(async () => {
     });
   console.log(products);
 });
-
+const deleteItem = async (productId) => {
+  await axios
+  .delete(`http://kozmosapi-001-site1.itempurl.com/api/Products/${productId}`)
+  .then((response) => {
+    let products = [...response.value]
+  })
+}
+// function deleteItem(productId){
+//   alert(productId);
+// }
 const users = ref<User[]>([...Array(10).keys()].map(() => testUser));
 </script>
