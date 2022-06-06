@@ -42,6 +42,6 @@ onMounted(async () => {
 //composition API
 
 const open = ref(false);
-</script>
+</script> 
 
 

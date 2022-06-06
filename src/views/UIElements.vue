@@ -296,8 +296,8 @@
                           />
                         </svg>
                       </a>
-                      <form method="POST">
-                        <button class="mx-2 px-2 rounded-md">
+                       <a href="" class="mx-2 px-2 rounded-md" @click="deleteItem(product.productId)">
+                        
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             class="h-5 w-5 text-red-700"
@@ -310,8 +310,8 @@
                               clip-rule="evenodd"
                             />
                           </svg>
-                        </button>
-                      </form>
+                      </a>
+                        
                     </span>
                   </div>
                 </td>
@@ -356,6 +356,13 @@ onMounted(async () => {
     });
   console.log(products);
 });
+const deleteItem = async (productId) => {
+  await axios
+  .delete(`http://kozmosapi-001-site1.itempurl.com/api/Products/${productId}`)
+  .then((response) => {
+    let products = [...response.value]
+  })
+}
 
 const users = ref<User[]>([...Array(10).keys()].map(() => testUser));
 </script>
