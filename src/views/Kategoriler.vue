@@ -312,23 +312,23 @@ import axios from "axios";
 import { useTableData } from '../hooks/useTableData'
 const { simpleTableData, paginatedTableData, wideTableData } = useTableData()
 
-const categories = ref([]);// ARASTIR 
-onMounted(async () => { // sayfalar yuklenmeden hemen once olusturulsun ,, callback 111111
+const categories = ref([]);
+onMounted(async () => { 
   await axios
-    .get("http://kozmosapi-001-site1.itempurl.com/api/Categories") //istek atildi
-    .then((response) => { //response tuttuk
-      categories.value = response.data; //response datasini degiskenndatasina attik
+    .get("http://kozmosapi-001-site1.itempurl.com/api/Categories") 
+    .then((response) => { 
+      categories.value = response.data; 
     });
   
 });
 
-const newCategory = ref({ //inputten deger alindi
+const newCategory = ref({ 
   name : ''
 })
 const addCategory = async ()=>{
   
   const data = {
-    categoryName : newCategory.value.name  //istek icin data olustur (veriyi degiskenden al)
+    categoryName : newCategory.value.name  
   }
   await axios
   .post('http://kozmosapi-001-site1.itempurl.com/api/Categories', data)
@@ -346,7 +346,7 @@ const fetchData = async () => {
     .then((response) => {
       categories.value = response.data;
     });
-  // console.log(categories);
+  
 }
 
 </script>

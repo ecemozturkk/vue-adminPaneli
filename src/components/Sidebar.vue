@@ -81,8 +81,8 @@
 
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
-          :class="[$route.name === 'UIElements' ? activeClass : inactiveClass]"
-          to="/ui-elements"
+          :class="[$route.name === 'Urunler' ? activeClass : inactiveClass]"
+          to="/urunler"
         >
           <svg
             class="fill-blue-500"
@@ -119,8 +119,8 @@
 
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
-          :class="[$route.name === 'Forms' ? activeClass : inactiveClass]"
-          to="/forms"
+          :class="[$route.name === 'Kategoriler' ? activeClass : inactiveClass]"
+          to="/kategoriler"
         >
           <svg
             class="fill-blue-500"
@@ -157,8 +157,8 @@
 
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
-          :class="[$route.name === 'Modal' ? activeClass : inactiveClass]"
-          to="/modal"
+          :class="[$route.name === 'SiparisTakibi' ? activeClass : inactiveClass]"
+          to="/siparistakibi"
         >
           <svg
             class="fill-blue-500"
@@ -175,8 +175,8 @@
         </router-link>
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
-          :class="[$route.name === 'Chart' ? activeClass : inactiveClass]"
-          to="/charts"
+          :class="[$route.name ==='Grafikler' ? activeClass : inactiveClass]"
+          to="/grafikler"
         >
           <svg
             class="fill-blue-500"
@@ -193,8 +193,8 @@
         </router-link>
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
-          :class="[$route.name === 'Blank' ? activeClass : inactiveClass]"
-          to="/blank"
+          :class="[$route.name === 'HesapIslemleri' ? activeClass : inactiveClass]"
+          to="/hesapislemleri"
         >
           <svg
             class="fill-blue-500"
@@ -213,8 +213,8 @@
         
           
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
-          :class="[$route.name === 'Contact' ? activeClass : inactiveClass]"
-          to="/contact"
+          :class="[$route.name === 'IletisimSayfasi' ? activeClass : inactiveClass]"
+          to="/iletisimsayfasi"
         >
           <svg
             class="fill-blue-500"

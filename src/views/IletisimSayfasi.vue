@@ -1,7 +1,6 @@
-<template>
+<!--<template>
   <div>
-    <!-- Breadcrumb -->
-    <!-- <Breadcrumb breadcrumb="Contact" /> -->
+    
     <table class="table">
       <thead>
         <tr>
@@ -43,5 +42,5 @@ onMounted(async () => {
 
 const open = ref(false);
 </script> 
-
+-->
 

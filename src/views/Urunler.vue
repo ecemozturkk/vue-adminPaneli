@@ -1145,12 +1145,9 @@ const deleteItem = async (productId) => {
     .delete(`http://kozmosapi-001-site1.itempurl.com/api/Products/${productId}`)
     .then((response) => {
       let products = [...response.data];
-      //fetchdata cagir
+      
     });
 };
-
-// fetch data onMounted kullan
-
 const users = ref<User[]>([...Array(10).keys()].map(() => testUser));
 </script>
 <style>

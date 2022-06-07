@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Dashboard from "../views/Dashboard.vue";
-import Forms from "../views/Forms.vue";
+import Kategoriler from "../views/Kategoriler.vue";
 import Tables from "../views/Tables.vue";
-import UIElements from "../views/UIElements.vue";
+import Urunler from "../views/Urunler.vue";
 import Login from "../views/Login.vue";
-import Modal from "../views/Modal.vue";
-import Chart from "../views/ChartView.vue";
+import SiparisTakibi from "../views/SiparisTakibi.vue";
+import Grafikler from "../views/Grafikler.vue";
 import Card from "../views/CardView.vue";
-import Blank from "../views/BlankView.vue";
-import Contact from "../views/Contact.vue";
+import HesapIslemleri from "../views/HesapIslemleri.vue";
+import IletisimSayfasi from "../views/IletisimSayfasi.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -23,9 +23,9 @@ const routes: Array<RouteRecordRaw> = [
     component: Dashboard,
   },
   {
-    path: "/forms",
-    name: "Forms",
-    component: Forms,
+    path: "/kategoriler",
+    name: "Kategoriler",
+    component: Kategoriler,
   },
   {
     path: "/cards",
@@ -38,32 +38,29 @@ const routes: Array<RouteRecordRaw> = [
     component: Tables,
   },
   {
-    path: "/ui-elements",
-    name: "UIElements",
-    component: UIElements,
+    path: "/urunler",
+    name: "Urunler",
+    component: Urunler,
   },
   {
-    path: "/modal",
-    name: "Modal",
-    component: Modal,
+    path: "/siparistakibi",
+    name: "SiparisTakibi",
+    component: SiparisTakibi,
   },
   {
-    path: "/charts",
+    path: "/grafikler",
     name: "Grafikler",
-    component: Chart
-    // path: "/charts",
-    // name: "Chart",
-    // component: Chart,
+    component: Grafikler,
   },
   {
-    path: "/blank",
-    name: "Blank",
-    component: Blank,
+    path: "/hesapislemleri",
+    name: "HesapIslemleri",
+    component: HesapIslemleri,
   },
   {
-    path: "/contact",
-    name: "Contact",
-    component: Contact,
+    path: "/iletisimsayfasi",
+    name: "IletisimSayfasi",
+    component: IletisimSayfasi,
   },
 
   // { path: "/:pathMatch(.*)*", component: NotFound },
