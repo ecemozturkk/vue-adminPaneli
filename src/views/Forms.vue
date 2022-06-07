@@ -80,7 +80,10 @@
                   </span>
 
                   <input
+                    
                     type="text"
+                    name="newCategoryName"
+                    v-model="newCategory.name"
                     class="
                       w-full
                       px-12
@@ -98,7 +101,9 @@
               </div>
               
 
-              <div class="flex items-center justify-between px-5 py-3">
+              
+            </form>
+            <div class="flex items-center justify-between px-5 py-3">
                 <button
                   class="
                     px-3
@@ -113,6 +118,7 @@
                   Iptal
                 </button>
                 <button
+                  @click="addCategory()"
                   class="
                     px-3
                     py-1
@@ -126,7 +132,6 @@
                   Ekle
                 </button>
               </div>
-            </form>
           </div>
         </div>
         <div
@@ -303,39 +308,45 @@
 
 import { ref, onMounted } from "vue";
 import axios from "axios";
+
 import { useTableData } from '../hooks/useTableData'
 const { simpleTableData, paginatedTableData, wideTableData } = useTableData()
 
-//import Breadcrumb from '../partials/Breadcrumb.vue'
-const categories = ref([]);
-onMounted(async () => {
+const categories = ref([]);// ARASTIR 
+onMounted(async () => { // sayfalar yuklenmeden hemen once olusturulsun ,, callback 111111
+  await axios
+    .get("http://kozmosapi-001-site1.itempurl.com/api/Categories") //istek atildi
+    .then((response) => { //response tuttuk
+      categories.value = response.data; //response datasini degiskenndatasina attik
+    });
+  
+});
+
+const newCategory = ref({ //inputten deger alindi
+  name : ''
+})
+const addCategory = async ()=>{
+  
+  const data = {
+    categoryName : newCategory.value.name  //istek icin data olustur (veriyi degiskenden al)
+  }
+  await axios
+  .post('http://kozmosapi-001-site1.itempurl.com/api/Categories', data)
+  .then((response) =>{
+    
+    console.log("response",response)
+    fetchData();
+  })
+  .catch(e => console.log(e))
+
+}
+const fetchData = async () => {
   await axios
     .get("http://kozmosapi-001-site1.itempurl.com/api/Categories")
     .then((response) => {
       categories.value = response.data;
     });
-  console.log(categories);
-});
+  // console.log(categories);
+}
 
-// import { ref } from "vue";
-// //import Breadcrumb from '../partials/Breadcrumb.vue'
-
-// interface User {
-//   username: string;
-//   email: string;
-//   password: string;
-//   confirm: string;
-// }
-
-// const user = ref<User>({
-//   username: "",
-//   email: "",
-//   password: "",
-//   confirm: "",
-// });
-
-// const register = () => {
-//   const data = JSON.parse(JSON.stringify(user.value));
-//   console.log("Registered: ", data);
-// };
 </script>

@@ -767,7 +767,7 @@
           d="M18.958 31.208V21.042H8.75V18.917H18.958V8.708H21.083V18.917H31.25V21.042H21.083V31.208Z"
         />
       </svg>
-      <span>Ürün Ekle</span>
+      Ürün Ekle
     </button>
 
     <div
@@ -1141,13 +1141,15 @@ onMounted(async () => {
   console.log(products);
 });
 const deleteItem = async (productId) => {
-  console.log("calisiyor");
   await axios
     .delete(`http://kozmosapi-001-site1.itempurl.com/api/Products/${productId}`)
     .then((response) => {
-      let products = [...response.value];
+      let products = [...response.data];
+      //fetchdata cagir
     });
 };
+
+// fetch data onMounted kullan
 
 const users = ref<User[]>([...Array(10).keys()].map(() => testUser));
 </script>
