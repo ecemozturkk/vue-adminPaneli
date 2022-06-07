@@ -4,8 +4,31 @@
     <!-- <Breadcrumb breadcrumb="Modal" /> -->
     <button
       @click="open = true"
-      class="px-6 py-2 mt-3 font-medium tracking-wide text-white bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none"
+      class="
+        px-6
+        py-2
+        mt-3
+        font-medium
+        tracking-wide
+        text-white
+        bg-indigo-600
+        rounded-md
+        hover:bg-indigo-500
+        focus:outline-none
+      "
     >
+      <svg
+        class="w-6"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M6.707 4.879A3 3 0 018.828 4H15a3 3 0 013 3v6a3 3 0 01-3 3H8.828a3 3 0 01-2.12-.879l-4.415-4.414a1 1 0 010-1.414l4.414-4.414zm4 2.414a1 1 0 00-1.414 1.414L10.586 10l-1.293 1.293a1 1 0 101.414 1.414L12 11.414l1.293 1.293a1 1 0 001.414-1.414L13.414 10l1.293-1.293a1 1 0 00-1.414-1.414L12 8.586l-1.293-1.293z"
+          clip-rule="evenodd"
+        />
+      </svg>
       Open Modal
     </button>
 
@@ -20,10 +43,32 @@
       ></div>
 
       <div
-        class="z-50 w-11/12 mx-auto overflow-y-auto bg-white rounded shadow-lg modal-container md:max-w-md"
+        class="
+          z-50
+          w-11/12
+          mx-auto
+          overflow-y-auto
+          bg-white
+          rounded
+          shadow-lg
+          modal-container
+          md:max-w-md
+        "
       >
         <div
-          class="absolute top-0 right-0 z-50 flex flex-col items-center mt-4 mr-4 text-sm text-white cursor-pointer modal-close"
+          class="
+            absolute
+            top-0
+            right-0
+            z-50
+            flex flex-col
+            items-center
+            mt-4
+            mr-4
+            text-sm text-white
+            cursor-pointer
+            modal-close
+          "
         >
           <svg
             class="text-white fill-current"
@@ -43,7 +88,8 @@
         <div class="px-6 py-4 text-left modal-content">
           <!--Title-->
           <div class="flex items-center justify-between pb-3">
-            <p class="text-2xl font-bold">Modal Title</p>
+            <p class="text-2xl font-bold" style="color:slateblue;">Ürünü Düzenle</p>
+
             <div class="z-50 cursor-pointer modal-close" @click="open = false">
               <svg
                 class="text-black fill-current"
@@ -60,26 +106,130 @@
           </div>
 
           <!--Body-->
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            asperiores sint necessitatibus aspernatur laborum quod ad quibusdam
-            voluptate aliquid molestiae! Cumque voluptatem sint eum, quibusdam
-            cupiditate vero quis. Praesentium, et!
-          </p>
+          <h1
+            class="
+              text-gray-800
+              font-lg font-italic
+              tracking-normal
+              leading-tight
+              mb-4
+            "
+          >
+            Ürünün değiştirmek istediğiniz özelliklerini güncelleyiniz.
+          </h1>
+          <label
+            for="name"
+            class="
+              text-gray-800 text-sm
+              font-bold
+              leading-tight
+              tracking-normal
+            "
+            >Ürün Adı : </label
+          >
+          <input id="name" class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder="Ürün adını giriniz." />
+          <label
+            for="name"
+            class="
+              text-gray-800 text-sm
+              font-bold
+              leading-tight
+              tracking-normal
+            "
+            >Ürün Görseli :</label
+          >
+          <input id="name" class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder="Ürün görselini giriniz." />
+<label
+            for="name"
+            class="
+              text-gray-800 text-sm
+              font-bold
+              leading-tight
+              tracking-normal
+            "
+            >İndirimsiz Fiyat :</label
+          >
+          <input id="name" class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder="Ürünün indirimsiz fiyatını giriniz." />
+<label
+            for="name"
+            class="
+              text-gray-800 text-sm
+              font-bold
+              leading-tight
+              tracking-normal
+            "
+            >İndirimli Fiyat :</label
+          >
+          <input id="name" class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder="Ürünün indirimli fiyatını giriniz." />
+<label
+            for="name"
+            class="
+              text-gray-800 text-sm
+              font-bold
+              leading-tight
+              tracking-normal
+            "
+            >Stok Sayısı :</label
+          >
+          <input id="name" class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder="Ürünün stok sayısını giriniz." />
+<label
+            for="name"
+            class="
+              text-gray-800 text-sm
+              font-bold
+              leading-tight
+              tracking-normal
+            "
+            >Youtube URL :</label
+          >
+          <input id="name" class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder="Ürünün Youtube URL adresini giriniz." />
+<label
+            for="name"
+            class="
+              text-gray-800 text-sm
+              font-bold
+              leading-tight
+              tracking-normal
+            "
+            >Ürün Açıklaması :</label
+          >
+          <input id="name" class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder="Ürünün açıklamasını giriniz." />
+
+          
 
           <!--Footer-->
           <div class="flex justify-end pt-2">
             <button
               @click="open = false"
-              class="p-3 px-6 py-3 mr-2 text-indigo-500 bg-transparent rounded-lg hover:bg-gray-100 hover:text-indigo-400 focus:outline-none"
+              class="
+                p-3
+                px-6
+                py-3
+                mr-2
+                text-indigo-500
+                bg-transparent
+                rounded-lg
+                hover:bg-gray-100 hover:text-indigo-400
+                focus:outline-none
+              "
             >
-              Close
+              Vazgeç
             </button>
             <button
               @click="open = false"
-              class="px-6 py-3 font-medium tracking-wide text-white bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none"
+              class="
+                px-6
+                py-3
+                font-medium
+                tracking-wide
+                text-white
+                bg-indigo-600
+                rounded-md
+                hover:bg-indigo-500
+                focus:outline-none
+              "
             >
-              Action
+              Güncelle
             </button>
           </div>
         </div>
@@ -89,10 +239,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
 // import Breadcrumb from '../partials/Breadcrumb.vue'
 
-const open = ref(false)
+const open = ref(false);
 </script>
 
 <style>

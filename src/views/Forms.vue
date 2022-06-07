@@ -4,9 +4,9 @@
     <!-- <Breadcrumb breadcrumb="Forms" /> -->
 
     <div class="mt-4">
-      <h4 class="text-gray-600">Model Form</h4>
+      
 
-      <div class="mt-4">
+      <div class="mt-4 flex flex-row justify-center gap-x-5" >
         <div
           class="
             w-1/2
@@ -96,6 +96,7 @@
                   />
                 </div>
               </div>
+              
 
               <div class="flex items-center justify-between px-5 py-3">
                 <button
