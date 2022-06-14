@@ -64,7 +64,7 @@ const { simpleTableData, paginatedTableData, wideTableData } = useTableData()
 const categories = ref([]);
 onMounted(async () => {
   await axios
-    .get("http://kozmosapi-001-site1.itempurl.com/api/Categories")
+    .get("https://localhost:44358/api/CustomerMessage")
     .then((response) => {
       categories.value = response.data;
     });
