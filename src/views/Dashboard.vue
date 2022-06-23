@@ -44,7 +44,7 @@
             </div>
 
             <div class="mx-5">
-              <h4 class="text-2xl font-semibold text-gray-700">1,382</h4>
+              <h4 class="text-2xl font-semibold text-gray-700">100</h4>
               <div class="text-gray-500">Yeni Kullanıcı</div>
             </div>
           </div>
@@ -77,7 +77,7 @@
             </div>
 
             <div class="mx-5">
-              <h4 class="text-2xl font-semibold text-gray-700">3,521</h4>
+              <h4 class="text-2xl font-semibold text-gray-700">12</h4>
               <div class="text-gray-500">Toplam Sipariş</div>
             </div>
           </div>
@@ -110,7 +110,7 @@
             </div>
 
             <div class="mx-5">
-              <h4 class="text-2xl font-semibold text-gray-700">15,542</h4>
+              <h4 class="text-2xl font-semibold text-gray-700">10</h4>
               <div class="text-gray-500">Mevcut Ürün</div>
             </div>
           </div>
@@ -123,144 +123,48 @@
     <div class="flex flex-col mt-8">
       <div class="py-2 -my-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
         <div
-          class="
-            inline-block
-            min-w-full
-            overflow-hidden
-            align-middle
-            border-b border-gray-200
-            shadow
-            sm:rounded-lg
-          "
+          class="inline-block min-w-full overflow-hidden align-middle border-b border-gray-200 shadow sm:rounded-lg"
         >
           <table class="min-w-full">
             <thead>
               <tr>
                 <th
-                  class="
-                    px-6
-                    py-3
-                    text-xs
-                    font-medium
-                    leading-4
-                    tracking-wider
-                    text-left text-gray-500
-                    uppercase
-                    border-b border-gray-200
-                    bg-gray-50
-                  "
+                  class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                 >
                   ID
                 </th>
                 <th
-                  class="
-                    px-6
-                    py-3
-                    text-xs
-                    font-medium
-                    leading-4
-                    tracking-wider
-                    text-left text-gray-500
-                    uppercase
-                    border-b border-gray-200
-                    bg-gray-50
-                  "
+                  class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                 >
                   Urun Adi
                 </th>
                 <th
-                  class="
-                    px-6
-                    py-3
-                    text-xs
-                    font-medium
-                    leading-4
-                    tracking-wider
-                    text-left text-gray-500
-                    uppercase
-                    border-b border-gray-200
-                    bg-gray-50
-                  "
+                  class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                 >
                   Urun Gorseli
                 </th>
                 <th
-                  class="
-                    px-6
-                    py-3
-                    text-xs
-                    font-medium
-                    leading-4
-                    tracking-wider
-                    text-left text-gray-500
-                    uppercase
-                    border-b border-gray-200
-                    bg-gray-50
-                  "
+                  class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                 >
                   Indirimsiz Fiyat
                 </th>
                 <th
-                  class="
-                    px-6
-                    py-3
-                    text-xs
-                    font-medium
-                    leading-4
-                    tracking-wider
-                    text-left text-gray-500
-                    uppercase
-                    border-b border-gray-200
-                    bg-gray-50
-                  "
+                  class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                 >
                   Indirimli Fiyat
                 </th>
                 <th
-                  class="
-                    px-6
-                    py-3
-                    text-xs
-                    font-medium
-                    leading-4
-                    tracking-wider
-                    text-left text-gray-500
-                    uppercase
-                    border-b border-gray-200
-                    bg-gray-50
-                  "
+                  class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                 >
                   Stok Sayisi
                 </th>
                 <th
-                  class="
-                    px-6
-                    py-3
-                    text-xs
-                    font-medium
-                    leading-4
-                    tracking-wider
-                    text-left text-gray-500
-                    uppercase
-                    border-b border-gray-200
-                    bg-gray-50
-                  "
+                  class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                 >
                   Youtube URL
                 </th>
                 <th
-                  class="
-                    px-6
-                    py-3
-                    text-xs
-                    font-medium
-                    leading-4
-                    tracking-wider
-                    text-left text-gray-500
-                    uppercase
-                    border-b border-gray-200
-                    bg-gray-50
-                  "
+                  class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                 >
                   Urun Aciklamasi
                 </th>
@@ -288,16 +192,7 @@
                     {{ product.productName }}
                   </div>
                   <div
-                    class="
-                      inline-flex
-                      px-5
-                      text-xs
-                      font-semibold
-                      leading-5
-                      text-green-800
-                      bg-sky-200
-                      rounded-full
-                    "
+                    class="inline-flex px-5 text-xs font-semibold leading-5 text-green-800 bg-sky-200 rounded-full"
                   >
                     {{ product.categoryName }}
                   </div>
@@ -307,115 +202,43 @@
                   class="px-6 py-4 border-b border-gray-200 whitespace-nowrap"
                 >
                   <span
-                    class="
-                      inline-flex
-                      px-2
-                      text-xs
-                      font-semibold
-                      leading-5
-                      text-green-800
-                      rounded-full
-                    "
+                    class="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 rounded-full"
                     >{{ product.productImage }}</span
                   >
                 </td>
 
                 <td
-                  class="
-                    px-8
-                    py-4
-                    text-sm
-                    leading-5
-                    text-red-700
-                    border-b border-gray-200
-                    whitespace-nowrap
-                  "
+                  class="px-8 py-4 text-sm leading-5 text-red-700 border-b border-gray-200 whitespace-nowrap"
                 >
                   {{ product.priceWithoutDiscount }}
                 </td>
                 <td
-                  class="
-                    px-8
-                    py-4
-                    text-sm
-                    leading-5
-                    text-green-700
-                    border-b border-gray-200
-                    whitespace-nowrap
-                  "
+                  class="px-8 py-4 text-sm leading-5 text-green-700 border-b border-gray-200 whitespace-nowrap"
                 >
                   {{ product.priceWithDiscount }}
                 </td>
                 <td
-                  class="
-                    px-6
-                    py-4
-                    text-sm
-                    leading-5
-                    text-gray-500
-                    border-b border-gray-200
-                    whitespace-nowrap
-                  "
+                  class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"
                 >
                   {{ product.stock }}
                 </td>
                 <td
-                  class="
-                    px-6
-                    py-4
-                    text-sm
-                    leading-5
-                    text-gray-500
-                    border-b border-gray-200
-                    whitespace-nowrap
-                  "
+                  class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"
                 >
                   <a
-                    class="
-                      inline-flex
-                      items-center
-                      h-8
-                      px-4
-                      m-2
-                      text-sm text-indigo-100
-                      transition-colors
-                      duration-150
-                      bg-indigo-700
-                      rounded-lg
-                      focus:shadow-outline
-                      hover:bg-indigo-800
-                    "
+                    class="inline-flex items-center h-8 px-4 m-2 text-sm text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800"
                     :href="product.youtubeUrl"
                     >Link</a
                   >
                 </td>
                 <td
-                  class="
-                    px-6
-                    py-4
-                    text-sm
-                    leading-5
-                    text-gray-500
-                    border-b border-gray-200
-                    whitespace-nowrap
-                  "
+                  class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"
                 >
                   {{ product.productDescription }}
                 </td>
                 <td
-                  class="
-                    px-6
-                    py-4
-                    text-sm
-                    font-medium
-                    leading-5
-                    text-right
-                    border-b border-gray-200
-                    whitespace-nowrap
-                  "
-                >
-                 
-                </td>
+                  class="px-6 py-4 text-sm font-medium leading-5 text-right border-b border-gray-200 whitespace-nowrap"
+                ></td>
               </tr>
             </tbody>
           </table>

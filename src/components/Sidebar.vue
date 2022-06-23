@@ -4,33 +4,13 @@
     <div
       :class="isOpen ? 'block' : 'hidden'"
       @click="isOpen = false"
-      class="
-        fixed
-        inset-0
-        z-20
-        transition-opacity
-        bg-black
-        opacity-50
-        lg:hidden
-      "
+      class="fixed inset-0 z-20 transition-opacity bg-black opacity-50 lg:hidden"
     ></div>
     <!-- End Backdrop -->
 
     <div
       :class="isOpen ? 'translate-x-0 ease-out' : '-translate-x-full ease-in'"
-      class="
-        fixed
-        inset-y-0
-        left-0
-        z-30
-        w-64
-        overflow-y-auto
-        transition
-        duration-300
-        transform
-        bg-gray-900
-        lg:translate-x-0 lg:static lg:inset-0
-      "
+      class="fixed inset-y-0 left-0 z-30 w-64 overflow-y-auto transition duration-300 transform bg-gray-900 lg:translate-x-0 lg:static lg:inset-0"
     >
       <div class="flex items-center justify-center mt-8">
         <div class="flex items-center">
@@ -157,25 +137,7 @@
 
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
-          :class="[$route.name === 'SiparisTakibi' ? activeClass : inactiveClass]"
-          to="/siparistakibi"
-        >
-          <svg
-            class="fill-blue-500"
-            xmlns="http://www.w3.org/2000/svg"
-            height="40"
-            width="40"
-          >
-            <path
-              d="M9.292 31.833Q7.458 31.833 6.208 30.583Q4.958 29.333 4.958 27.5H2.833V10.75Q2.833 9.75 3.542 9.042Q4.25 8.333 5.25 8.333H27.542V14.458H31.208L37.167 22.458V27.5H34.625Q34.625 29.333 33.354 30.583Q32.083 31.833 30.25 31.833Q28.458 31.833 27.208 30.583Q25.958 29.333 25.958 27.5H13.625Q13.625 29.375 12.354 30.604Q11.083 31.833 9.292 31.833ZM9.292 30.458Q10.5 30.458 11.354 29.562Q12.208 28.667 12.208 27.5Q12.208 26.292 11.354 25.438Q10.5 24.583 9.292 24.583Q8.083 24.583 7.229 25.438Q6.375 26.292 6.375 27.5Q6.375 28.667 7.229 29.562Q8.083 30.458 9.292 30.458ZM30.292 30.458Q31.5 30.458 32.354 29.562Q33.208 28.667 33.208 27.5Q33.208 26.292 32.354 25.438Q31.5 24.583 30.292 24.583Q29.083 24.583 28.208 25.438Q27.333 26.292 27.333 27.5Q27.333 28.667 28.208 29.562Q29.083 30.458 30.292 30.458ZM27.542 22.667H35.625L30.417 15.875H27.542Z"
-            />
-          </svg>
-
-          <span class="mx-4">Sipariş Takibi</span>
-        </router-link>
-        <router-link
-          class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
-          :class="[$route.name ==='Grafikler' ? activeClass : inactiveClass]"
+          :class="[$route.name === 'Grafikler' ? activeClass : inactiveClass]"
           to="/grafikler"
         >
           <svg
@@ -191,29 +153,12 @@
 
           <span class="mx-4">Grafikler</span>
         </router-link>
-        <router-link
-          class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
-          :class="[$route.name === 'HesapIslemleri' ? activeClass : inactiveClass]"
-          to="/hesapislemleri"
-        >
-          <svg
-            class="fill-blue-500"
-            xmlns="http://www.w3.org/2000/svg"
-            height="40"
-            width="40"
-          >
-            <path
-              d="M23.083 19.625Q24.833 19.625 26.021 18.417Q27.208 17.208 27.208 15.458Q27.208 13.75 26.021 12.542Q24.833 11.333 23.083 11.333Q21.333 11.333 20.146 12.542Q18.958 13.75 18.958 15.5Q18.958 17.208 20.146 18.417Q21.333 19.625 23.083 19.625ZM13.583 28.833Q12.583 28.833 11.875 28.125Q11.167 27.417 11.167 26.417V7.417Q11.167 6.417 11.875 5.708Q12.583 5 13.583 5H32.583Q33.583 5 34.292 5.708Q35 6.417 35 7.417V26.417Q35 27.417 34.292 28.125Q33.583 28.833 32.583 28.833ZM7.417 35Q6.417 35 5.708 34.292Q5 33.583 5 32.583V11.792H6.417V32.583Q6.417 33 6.708 33.292Q7 33.583 7.417 33.583H28.208V35ZM13.542 27.417H32.625Q30.542 25.083 28.042 24.083Q25.542 23.083 23.083 23.083Q20.583 23.083 18.104 24.083Q15.625 25.083 13.542 27.417Z"
-            />
-          </svg>
 
-          <span class="mx-4">Hesap İşlemleri</span>
-        </router-link>
         <router-link
-        
-          
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
-          :class="[$route.name === 'IletisimSayfasi' ? activeClass : inactiveClass]"
+          :class="[
+            $route.name === 'IletisimSayfasi' ? activeClass : inactiveClass,
+          ]"
           to="/iletisimsayfasi"
         >
           <svg
@@ -227,8 +172,7 @@
             />
           </svg>
           <span class="mx-4">İletişim</span>
-          </router-link>
-        
+        </router-link>
       </nav>
     </div>
   </div>

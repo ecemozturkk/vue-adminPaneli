@@ -3,164 +3,62 @@
     <div class="mt-8"></div>
 
     <div class="flex flex-col mt-8">
-      <div class="py-2 -my-2 overflow-x-auto  sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+      <div class="py-2 -my-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
         <div
-          class="
-            inline-block
-            min-w-full
-            overflow-hidden
-            align-middle
-            border-b border-gray-200
-            shadow
-            sm:rounded-lg
-          "
+          class="inline-block min-w-full overflow-hidden align-middle border-b border-gray-200 shadow sm:rounded-lg"
         >
           <table class="min-w-full">
             <thead>
               <tr>
                 <th
-                  class="
-                    px-6
-                    py-3
-                    text-xs
-                    font-medium
-                    leading-4
-                    tracking-wider
-                    text-left text-gray-500
-                    uppercase
-                    border-b border-gray-200
-                    bg-gray-50
-                  "
+                  class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                 >
                   ID
                 </th>
                 <th
-                  class="
-                    px-6
-                    py-3
-                    text-xs
-                    font-medium
-                    leading-4
-                    tracking-wider
-                    text-left text-gray-500
-                    uppercase
-                    border-b border-gray-200
-                    bg-gray-50
-                  "
+                  class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                 >
                   Urun Adi
                 </th>
                 <th
-                  class="
-                    px-6
-                    py-3
-                    text-xs
-                    font-medium
-                    leading-4
-                    tracking-wider
-                    text-left text-gray-500
-                    uppercase
-                    border-b border-gray-200
-                    bg-gray-50
-                  "
+                  class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                 >
                   Urun Gorseli
                 </th>
                 <th
-                  class="
-                    px-6
-                    py-3
-                    text-xs
-                    font-medium
-                    leading-4
-                    tracking-wider
-                    text-left text-gray-500
-                    uppercase
-                    border-b border-gray-200
-                    bg-gray-50
-                  "
+                  class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                 >
                   Indirimsiz Fiyat
                 </th>
                 <th
-                  class="
-                    px-6
-                    py-3
-                    text-xs
-                    font-medium
-                    leading-4
-                    tracking-wider
-                    text-left text-gray-500
-                    uppercase
-                    border-b border-gray-200
-                    bg-gray-50
-                  "
+                  class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                 >
                   Indirimli Fiyat
                 </th>
                 <th
-                  class="
-                    px-6
-                    py-3
-                    text-xs
-                    font-medium
-                    leading-4
-                    tracking-wider
-                    text-left text-gray-500
-                    uppercase
-                    border-b border-gray-200
-                    bg-gray-50
-                  "
+                  class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                 >
                   Stok Sayisi
                 </th>
                 <th
-                  class="
-                    px-6
-                    py-3
-                    text-xs
-                    font-medium
-                    leading-4
-                    tracking-wider
-                    text-left text-gray-500
-                    uppercase
-                    border-b border-gray-200
-                    bg-gray-50
-                  "
+                  class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                 >
                   Youtube URL
                 </th>
                 <th
-                  class="
-                    px-6
-                    py-3
-                    text-xs
-                    font-medium
-                    leading-4
-                    tracking-wider
-                    text-left text-gray-500
-                    uppercase
-                    border-b border-gray-200
-                    bg-gray-50
-                  "
+                  class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                 >
                   Urun Aciklamasi
                 </th>
                 <th
-                  class="
-                    px-6
-                    py-3
-                    text-xs
-                    font-medium
-                    leading-4
-                    tracking-wider
-                    text-left text-gray-500
-                    uppercase
-                    border-b border-gray-200
-                    bg-gray-50
-                  "
+                  class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
                 >
                   DÜZENLE - SİL
+                </th>
+                <th
+                  class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50"
+                >
+                  Resim Ekle
                 </th>
               </tr>
             </thead>
@@ -184,16 +82,7 @@
                     {{ product.productName }}
                   </div>
                   <div
-                    class="
-                      inline-flex
-                      px-5
-                      text-xs
-                      font-semibold
-                      leading-5
-                      text-green-800
-                      bg-sky-200
-                      rounded-full
-                    "
+                    class="inline-flex px-5 text-xs font-semibold leading-5 text-green-800 bg-sky-200 rounded-full"
                   >
                     {{ product.categoryName }}
                   </div>
@@ -203,130 +92,53 @@
                   class="px-6 py-4 border-b border-gray-200 whitespace-nowrap"
                 >
                   <span
-                    class="
-                      inline-flex
-                      px-2
-                      text-xs
-                      font-semibold
-                      leading-5
-                      text-green-800
-                      rounded-full
-                    "
-                    >{{ product.productImage }}</span
+                    class="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 rounded-full"
                   >
+                    <span v-if="product.productImage.length > 1">
+                      Görsel Ekli
+                    </span>
+                    <span v-else> Görsel Ekli Değil </span>
+                  </span>
                 </td>
 
                 <td
-                  class="
-                    px-8
-                    py-4
-                    text-sm
-                    leading-5
-                    text-red-700
-                    border-b border-gray-200
-                    whitespace-nowrap
-                  "
+                  class="px-8 py-4 text-sm leading-5 text-red-700 border-b border-gray-200 whitespace-nowrap"
                 >
                   {{ product.priceWithoutDiscount }}
                 </td>
                 <td
-                  class="
-                    px-8
-                    py-4
-                    text-sm
-                    leading-5
-                    text-green-700
-                    border-b border-gray-200
-                    whitespace-nowrap
-                  "
+                  class="px-8 py-4 text-sm leading-5 text-green-700 border-b border-gray-200 whitespace-nowrap"
                 >
                   {{ product.priceWithDiscount }}
                 </td>
                 <td
-                  class="
-                    px-6
-                    py-4
-                    text-sm
-                    leading-5
-                    text-gray-500
-                    border-b border-gray-200
-                    whitespace-nowrap
-                  "
+                  class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"
                 >
                   {{ product.stock }}
                 </td>
                 <td
-                  class="
-                    px-6
-                    py-4
-                    text-sm
-                    leading-5
-                    text-gray-500
-                    border-b border-gray-200
-                    whitespace-nowrap
-                  "
+                  class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"
                 >
                   <a
-                    class="
-                      inline-flex
-                      items-center
-                      h-8
-                      px-4
-                      m-2
-                      text-sm text-indigo-100
-                      transition-colors
-                      duration-150
-                      bg-indigo-700
-                      rounded-lg
-                      focus:shadow-outline
-                      hover:bg-indigo-800
-                    "
+                    class="inline-flex items-center h-8 px-4 m-2 text-sm text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800"
                     :href="product.youtubeUrl"
                     >Link</a
                   >
                 </td>
                 <td
-                  class="
-                    px-6
-                    py-4
-                    text-sm
-                    leading-5
-                    text-gray-500
-                    border-b border-gray-200
-                    whitespace-nowrap
-                  "
+                  class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"
                 >
                   {{ product.productDescription }}
                 </td>
                 <td
-                  class="
-                    px-6
-                    py-4
-                    text-sm
-                    font-medium
-                    leading-5
-                    text-right
-                    border-b border-gray-200
-                    whitespace-nowrap
-                  "
+                  class="px-6 py-4 text-sm font-medium leading-5 text-right border-b border-gray-200 whitespace-nowrap"
                 >
                   <div class="flex justify-around">
                     <span class="text-yellow-500 flex justify-center">
                       <td>
                         <button
                           @click="open = true"
-                          class="
-                            px-3
-                            py-2
-                            mt-3
-                            font-medium
-                            tracking-wide
-                            text-white
-                            bg-indigo-200
-                            rounded-md
-                            hover:bg-indigo-500
-                            focus:outline-none
-                          "
+                          class="px-3 py-2 mt-3 font-medium tracking-wide text-white bg-indigo-200 rounded-md hover:bg-indigo-500 focus:outline-none"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -347,43 +159,14 @@
                       >
                         <div
                           @click="open = false"
-                          class="
-                            absolute
-                            w-full
-                            h-full
-                            bg-gray-900
-                            opacity-50
-                            modal-overlay
-                          "
+                          class="absolute w-full h-full bg-gray-900 opacity-50 modal-overlay"
                         ></div>
 
                         <div
-                          class="
-                            z-50
-                            w-11/12
-                            mx-auto
-                            overflow-y-auto
-                            bg-white
-                            rounded
-                            shadow-lg
-                            modal-container
-                            md:max-w-md
-                          "
+                          class="z-50 w-11/12 mx-auto overflow-y-auto bg-white rounded shadow-lg modal-container md:max-w-md"
                         >
                           <div
-                            class="
-                              absolute
-                              top-0
-                              right-0
-                              z-50
-                              flex flex-col
-                              items-center
-                              mt-4
-                              mr-4
-                              text-sm text-white
-                              cursor-pointer
-                              modal-close
-                            "
+                            class="absolute top-0 right-0 z-50 flex flex-col items-center mt-4 mr-4 text-sm text-white cursor-pointer modal-close"
                           >
                             <svg
                               class="text-white fill-current"
@@ -429,240 +212,80 @@
 
                             <!--Body-->
                             <h1
-                              class="
-                                text-gray-800
-                                font-lg font-italic
-                                tracking-normal
-                                leading-tight
-                                mb-4
-                              "
+                              class="text-gray-800 font-lg font-italic tracking-normal leading-tight mb-4"
                             >
                               Ürünün değiştirmek istediğiniz özelliklerini
                               güncelleyiniz.
                             </h1>
                             <label
                               for="name"
-                              class="
-                                text-gray-800 text-sm
-                                font-bold
-                                leading-tight
-                                tracking-normal
-                              "
+                              class="text-gray-800 text-sm font-bold leading-tight tracking-normal"
                               >Ürün Adı :
                             </label>
                             <input
                               id="name"
-                              class="
-                                mb-3
-                                mt-2
-                                text-gray-600
-                                focus:outline-none
-                                focus:border
-                                focus:border-indigo-700
-                                font-normal
-                                w-full
-                                h-10
-                                flex
-                                items-center
-                                pl-3
-                                text-sm
-                                border-gray-300
-                                rounded
-                                border
-                              "
+                              class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
                               placeholder="Ürün adını giriniz."
                             />
 
                             <label
                               for="name"
-                              class="
-                                text-gray-800 text-sm
-                                font-bold
-                                leading-tight
-                                tracking-normal
-                              "
+                              class="text-gray-800 text-sm font-bold leading-tight tracking-normal"
                               >Ürün Görseli :</label
                             >
                             <input
                               id="name"
-                              class="
-                                mb-3
-                                mt-2
-                                text-gray-600
-                                focus:outline-none
-                                focus:border
-                                focus:border-indigo-700
-                                font-normal
-                                w-full
-                                h-10
-                                flex
-                                items-center
-                                pl-3
-                                text-sm
-                                border-gray-300
-                                rounded
-                                border
-                              "
+                              class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
                               placeholder="Ürün görselini giriniz."
                             />
                             <label
                               for="name"
-                              class="
-                                text-gray-800 text-sm
-                                font-bold
-                                leading-tight
-                                tracking-normal
-                              "
+                              class="text-gray-800 text-sm font-bold leading-tight tracking-normal"
                               >İndirimsiz Fiyat :</label
                             >
                             <input
                               id="name"
-                              class="
-                                mb-3
-                                mt-2
-                                text-gray-600
-                                focus:outline-none
-                                focus:border
-                                focus:border-indigo-700
-                                font-normal
-                                w-full
-                                h-10
-                                flex
-                                items-center
-                                pl-3
-                                text-sm
-                                border-gray-300
-                                rounded
-                                border
-                              "
+                              class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
                               placeholder="Ürünün indirimsiz fiyatını giriniz."
                             />
                             <label
                               for="name"
-                              class="
-                                text-gray-800 text-sm
-                                font-bold
-                                leading-tight
-                                tracking-normal
-                              "
+                              class="text-gray-800 text-sm font-bold leading-tight tracking-normal"
                               >İndirimli Fiyat :</label
                             >
                             <input
                               id="name"
-                              class="
-                                mb-3
-                                mt-2
-                                text-gray-600
-                                focus:outline-none
-                                focus:border
-                                focus:border-indigo-700
-                                font-normal
-                                w-full
-                                h-10
-                                flex
-                                items-center
-                                pl-3
-                                text-sm
-                                border-gray-300
-                                rounded
-                                border
-                              "
+                              class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
                               placeholder="Ürünün indirimli fiyatını giriniz."
                             />
                             <label
                               for="name"
-                              class="
-                                text-gray-800 text-sm
-                                font-bold
-                                leading-tight
-                                tracking-normal
-                              "
+                              class="text-gray-800 text-sm font-bold leading-tight tracking-normal"
                               >Stok Sayısı :</label
                             >
                             <input
                               id="name"
-                              class="
-                                mb-3
-                                mt-2
-                                text-gray-600
-                                focus:outline-none
-                                focus:border
-                                focus:border-indigo-700
-                                font-normal
-                                w-full
-                                h-10
-                                flex
-                                items-center
-                                pl-3
-                                text-sm
-                                border-gray-300
-                                rounded
-                                border
-                              "
+                              class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
                               placeholder="Ürünün stok sayısını giriniz."
                             />
                             <label
                               for="name"
-                              class="
-                                text-gray-800 text-sm
-                                font-bold
-                                leading-tight
-                                tracking-normal
-                              "
+                              class="text-gray-800 text-sm font-bold leading-tight tracking-normal"
                               >Youtube URL :</label
                             >
                             <input
                               id="name"
-                              class="
-                                mb-3
-                                mt-2
-                                text-gray-600
-                                focus:outline-none
-                                focus:border
-                                focus:border-indigo-700
-                                font-normal
-                                w-full
-                                h-10
-                                flex
-                                items-center
-                                pl-3
-                                text-sm
-                                border-gray-300
-                                rounded
-                                border
-                              "
+                              class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
                               placeholder="Ürünün Youtube URL adresini giriniz."
                             />
                             <label
                               for="name"
-                              class="
-                                text-gray-800 text-sm
-                                font-bold
-                                leading-tight
-                                tracking-normal
-                              "
+                              class="text-gray-800 text-sm font-bold leading-tight tracking-normal"
                               >Ürün Açıklaması :</label
                             >
                             <input
                               id="name"
-                              class="
-                                mb-3
-                                mt-2
-                                text-gray-600
-                                focus:outline-none
-                                focus:border
-                                focus:border-indigo-700
-                                font-normal
-                                w-full
-                                h-10
-                                flex
-                                items-center
-                                pl-3
-                                text-sm
-                                border-gray-300
-                                rounded
-                                border
-                              "
+                              class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
                               placeholder="Ürünün açıklamasını giriniz."
                             />
 
@@ -670,33 +293,13 @@
                             <div class="flex justify-end pt-2">
                               <button
                                 @click="open = false"
-                                class="
-                                  p-3
-                                  px-6
-                                  py-3
-                                  mr-2
-                                  text-indigo-500
-                                  bg-transparent
-                                  rounded-lg
-                                  hover:bg-gray-100 hover:text-indigo-400
-                                  focus:outline-none
-                                "
+                                class="p-3 px-6 py-3 mr-2 text-indigo-500 bg-transparent rounded-lg hover:bg-gray-100 hover:text-indigo-400 focus:outline-none"
                               >
                                 Vazgeç
                               </button>
                               <button
                                 @click="open = false"
-                                class="
-                                  px-6
-                                  py-3
-                                  font-medium
-                                  tracking-wide
-                                  text-white
-                                  bg-indigo-600
-                                  rounded-md
-                                  hover:bg-indigo-500
-                                  focus:outline-none
-                                "
+                                class="px-6 py-3 font-medium tracking-wide text-white bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none"
                               >
                                 Güncelle
                               </button>
@@ -707,18 +310,7 @@
                       <td>
                         <button
                           @click="deleteItem(product.productId)"
-                          class="
-                            px-3
-                            py-2
-                            mt-3
-                            font-medium
-                            tracking-wide
-                            text-white
-                            bg-red-400
-                            rounded-md
-                            hover:bg-red-600
-                            focus:outline-none
-                          "
+                          class="px-3 py-2 mt-3 font-medium tracking-wide text-white bg-red-400 rounded-md hover:bg-red-600 focus:outline-none"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -734,6 +326,27 @@
                     </span>
                   </div>
                 </td>
+                <td>
+                  <form
+                    method="post"
+                    @submit.prevent="onUpload(product.productId)"
+                  >
+                    <label class="block">
+                      <input
+                        type="file"
+                        class="block w-full text-sm text-gray-500 file:py-2 file:px-6 file:rounded file:border-1 file:border-gray-400"
+                        @change="addImage"
+                      />
+
+                      <button
+                        type="submit"
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                      >
+                        Yükle
+                      </button>
+                    </label>
+                  </form>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -742,22 +355,7 @@
     </div>
     <button
       @click="open = true"
-      class="
-        flex
-        items-center
-        
-        justify-center
-        py-2
-        px-3
-        mt-4
-        font-medium
-        tracking-wide
-        text-white
-        bg-indigo-600
-        rounded-md
-        hover:bg-indigo-500
-        focus:outline-none
-      "
+      class="flex items-center justify-center py-2 px-3 mt-4 font-medium tracking-wide text-white bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none"
     >
       <svg
         class="w-9 h-8 mr-4 fill-white flex items-center justify-center"
@@ -781,32 +379,10 @@
       ></div>
 
       <div
-        class="
-          z-50
-          w-11/12
-          mx-auto
-          overflow-y-auto
-          bg-white
-          rounded
-          shadow-lg
-          modal-container
-          md:max-w-md
-        "
+        class="z-50 w-11/12 mx-auto overflow-y-auto bg-white rounded shadow-lg modal-container md:max-w-md"
       >
         <div
-          class="
-            absolute
-            top-0
-            right-0
-            z-50
-            flex flex-col
-            items-center
-            mt-4
-            mr-4
-            text-sm text-white
-            cursor-pointer
-            modal-close
-          "
+          class="absolute top-0 right-0 z-50 flex flex-col items-center mt-4 mr-4 text-sm text-white cursor-pointer modal-close"
         >
           <svg
             class="text-white fill-current"
@@ -847,224 +423,78 @@
 
           <!--Body-->
           <h1
-            class="
-              text-gray-800
-              font-lg font-italic
-              tracking-normal
-              leading-tight
-              mb-4
-            "
+            class="text-gray-800 font-lg font-italic tracking-normal leading-tight mb-4"
           >
             Ürünün eklemek istediğiniz özelliklerini giriniz.
           </h1>
           <label
             for="name"
-            class="
-              text-gray-800 text-sm
-              font-bold
-              leading-tight
-              tracking-normal
-            "
+            class="text-gray-800 text-sm font-bold leading-tight tracking-normal"
             >Ürün Adı :
           </label>
           <input
             id="name"
-            class="
-              mb-3
-              mt-2
-              text-gray-600
-              focus:outline-none focus:border focus:border-indigo-700
-              font-normal
-              w-full
-              h-10
-              flex
-              items-center
-              pl-3
-              text-sm
-              border-gray-300
-              rounded
-              border
-            "
+            class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
             placeholder="Ürün adını giriniz."
           />
           <label
             for="name"
-            class="
-              text-gray-800 text-sm
-              font-bold
-              leading-tight
-              tracking-normal
-            "
+            class="text-gray-800 text-sm font-bold leading-tight tracking-normal"
             >Ürün Görseli :</label
           >
           <input
             id="name"
-            class="
-              mb-3
-              mt-2
-              text-gray-600
-              focus:outline-none focus:border focus:border-indigo-700
-              font-normal
-              w-full
-              h-10
-              flex
-              items-center
-              pl-3
-              text-sm
-              border-gray-300
-              rounded
-              border
-            "
+            class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
             placeholder="Ürün görselini giriniz."
           />
           <label
             for="name"
-            class="
-              text-gray-800 text-sm
-              font-bold
-              leading-tight
-              tracking-normal
-            "
+            class="text-gray-800 text-sm font-bold leading-tight tracking-normal"
             >İndirimsiz Fiyat :</label
           >
           <input
             id="name"
-            class="
-              mb-3
-              mt-2
-              text-gray-600
-              focus:outline-none focus:border focus:border-indigo-700
-              font-normal
-              w-full
-              h-10
-              flex
-              items-center
-              pl-3
-              text-sm
-              border-gray-300
-              rounded
-              border
-            "
+            class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
             placeholder="Ürünün indirimsiz fiyatını giriniz."
           />
           <label
             for="name"
-            class="
-              text-gray-800 text-sm
-              font-bold
-              leading-tight
-              tracking-normal
-            "
+            class="text-gray-800 text-sm font-bold leading-tight tracking-normal"
             >İndirimli Fiyat :</label
           >
           <input
             id="name"
-            class="
-              mb-3
-              mt-2
-              text-gray-600
-              focus:outline-none focus:border focus:border-indigo-700
-              font-normal
-              w-full
-              h-10
-              flex
-              items-center
-              pl-3
-              text-sm
-              border-gray-300
-              rounded
-              border
-            "
+            class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
             placeholder="Ürünün indirimli fiyatını giriniz."
           />
           <label
             for="name"
-            class="
-              text-gray-800 text-sm
-              font-bold
-              leading-tight
-              tracking-normal
-            "
+            class="text-gray-800 text-sm font-bold leading-tight tracking-normal"
             >Stok Sayısı :</label
           >
           <input
             id="name"
-            class="
-              mb-3
-              mt-2
-              text-gray-600
-              focus:outline-none focus:border focus:border-indigo-700
-              font-normal
-              w-full
-              h-10
-              flex
-              items-center
-              pl-3
-              text-sm
-              border-gray-300
-              rounded
-              border
-            "
+            class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
             placeholder="Ürünün stok sayısını giriniz."
           />
           <label
             for="name"
-            class="
-              text-gray-800 text-sm
-              font-bold
-              leading-tight
-              tracking-normal
-            "
+            class="text-gray-800 text-sm font-bold leading-tight tracking-normal"
             >Youtube URL :</label
           >
           <input
             id="name"
-            class="
-              mb-3
-              mt-2
-              text-gray-600
-              focus:outline-none focus:border focus:border-indigo-700
-              font-normal
-              w-full
-              h-10
-              flex
-              items-center
-              pl-3
-              text-sm
-              border-gray-300
-              rounded
-              border
-            "
+            class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
             placeholder="Ürünün Youtube URL adresini giriniz."
           />
           <label
             for="name"
-            class="
-              text-gray-800 text-sm
-              font-bold
-              leading-tight
-              tracking-normal
-            "
+            class="text-gray-800 text-sm font-bold leading-tight tracking-normal"
             >Ürün Açıklaması :</label
           >
           <input
             id="name"
-            class="
-              mb-3
-              mt-2
-              text-gray-600
-              focus:outline-none focus:border focus:border-indigo-700
-              font-normal
-              w-full
-              h-10
-              flex
-              items-center
-              pl-3
-              text-sm
-              border-gray-300
-              rounded
-              border
-            "
+            class="mb-3 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
             placeholder="Ürünün açıklamasını giriniz."
           />
 
@@ -1072,33 +502,13 @@
           <div class="flex justify-end pt-2">
             <button
               @click="open = false"
-              class="
-                p-3
-                px-6
-                py-3
-                mr-2
-                text-indigo-500
-                bg-transparent
-                rounded-lg
-                hover:bg-gray-100 hover:text-indigo-400
-                focus:outline-none
-              "
+              class="p-3 px-6 py-3 mr-2 text-indigo-500 bg-transparent rounded-lg hover:bg-gray-100 hover:text-indigo-400 focus:outline-none"
             >
               Vazgeç
             </button>
             <button
               @click="open = false"
-              class="
-                px-6
-                py-3
-                font-medium
-                tracking-wide
-                text-white
-                bg-indigo-600
-                rounded-md
-                hover:bg-indigo-500
-                focus:outline-none
-              "
+              class="px-6 py-3 font-medium tracking-wide text-white bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none"
             >
               Ekle
             </button>
@@ -1111,7 +521,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 import axios from "axios";
-import Banner from "../partials/Banner.vue";
+import { autheader } from "../helpers/auth-helper";
 const open = ref(false);
 //import Breadcrumb from "../partials/Breadcrumb.vue";
 interface User {
@@ -1132,6 +542,7 @@ const testUser: User = {
   role: "Owner",
 };
 const products = ref([]);
+let selectedFile: any = null;
 onMounted(async () => {
   await axios
     .get("http://kozmosapi-001-site1.itempurl.com/api/Products")
@@ -1140,14 +551,49 @@ onMounted(async () => {
     });
   console.log(products);
 });
-const deleteItem = async (productId) => {
+const deleteItem = async (productId: number) => {
   await axios
-    .delete(`http://kozmosapi-001-site1.itempurl.com/api/Products/${productId}`)
+    .delete(
+      `http://kozmosapi-001-site1.itempurl.com/api/Products/${productId}`,
+      {
+        headers: {
+          Authorization: "Bearer " + autheader(),
+        },
+      }
+    )
     .then((response) => {
-      let products = [...response.data];
-      
+      console.log(response);
+      window.location.reload();
     });
 };
+
+const addImage = (e: any) => {
+  selectedFile = e.target.files[0];
+  console.log("selectedFile");
+  console.log(selectedFile);
+};
+
+const onUpload = async (id: string) => {
+  const fd = new FormData();
+
+  fd.append("file", selectedFile, selectedFile.name);
+
+  try {
+    await axios.post(
+      `http://kozmosapi-001-site1.itempurl.com/api/Products/addImage/${id}`,
+      fd,
+      {
+        headers: {
+          Authorization: "Bearer " + autheader(),
+        },
+      }
+    );
+    window.location.reload();
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 const users = ref<User[]>([...Array(10).keys()].map(() => testUser));
 </script>
 <style>

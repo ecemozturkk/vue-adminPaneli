@@ -1,4 +1,13 @@
 <template>
+  <div
+    v-show="!result"
+    class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
+    role="alert"
+  >
+    <strong class="font-bold">Eyvah!</strong>
+    <span class="block sm:inline">Mail ya da Şifre Yanlış Girildi</span>
+  </div>
+
   <div class="flex items-center justify-center h-screen px-6 bg-gray-200">
     <div class="w-full max-w-sm p-6 bg-white rounded-md shadow-md">
       <div class="flex items-center justify-center">
@@ -19,22 +28,12 @@
         <span class="text-2xl font-semibold text-gray-700">KOZMOS</span>
       </div>
 
-      <form class="mt-4" @submit.prevent="login">
+      <form class="mt-4" @submit.prevent="login(email, password)">
         <label class="block">
           <span class="text-sm text-gray-700">E-mail : </span>
           <input
             type="email"
-            class="
-              block
-              w-full
-              mt-1
-              border-gray-200
-              rounded-md
-              focus:border-indigo-600
-              focus:ring
-              focus:ring-opacity-40
-              focus:ring-indigo-500
-            "
+            class="block w-full mt-1 border-gray-200 rounded-md focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
             v-model="email"
           />
         </label>
@@ -43,17 +42,7 @@
           <span class="text-sm text-gray-700">Parola : </span>
           <input
             type="password"
-            class="
-              block
-              w-full
-              mt-1
-              border-gray-200
-              rounded-md
-              focus:border-indigo-600
-              focus:ring
-              focus:ring-opacity-40
-              focus:ring-indigo-500
-            "
+            class="block w-full mt-1 border-gray-200 rounded-md focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
             v-model="password"
           />
         </label>
@@ -63,15 +52,7 @@
             <label class="inline-flex items-center">
               <input
                 type="checkbox"
-                class="
-                  text-indigo-600
-                  border-gray-200
-                  rounded-md
-                  focus:border-indigo-600
-                  focus:ring
-                  focus:ring-opacity-40
-                  focus:ring-indigo-500
-                "
+                class="text-indigo-600 border-gray-200 rounded-md focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
               />
               <span class="mx-2 text-sm text-gray-600">Beni Hatırla</span>
             </label>
@@ -89,16 +70,7 @@
         <div class="mt-6">
           <button
             type="submit"
-            class="
-              w-full
-              px-4
-              py-2
-              text-sm text-center text-white
-              bg-indigo-600
-              rounded-md
-              focus:outline-none
-              hover:bg-indigo-500
-            "
+            class="w-full px-4 py-2 text-sm text-center text-white bg-indigo-600 rounded-md focus:outline-none hover:bg-indigo-500"
           >
             Giriş Yap
           </button>
@@ -111,12 +83,43 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useRouter } from "vue-router";
+import axios from "axios";
 
 const router = useRouter();
-const email = ref("admin@mail.com");
-const password = ref("admin123");
+const email = ref("admin@example.com");
+const password = ref("Admin.123");
+let result = ref(true);
 
-function login() {
-  router.push("/dashboard");
+async function login(email: string, password: string) {
+  try {
+    const response = await axios.post(
+      "http://kozmosapi-001-site1.itempurl.com/api/User/login",
+      {
+        email,
+        password,
+      }
+    );
+    if (response.data.tokenInfo.token) {
+      localStorage.setItem("admin", JSON.stringify(response.data.tokenInfo));
+    }
+
+    router.push("/dashboard");
+    console.log(response.data.tokenInfo.token);
+  } catch (error) {
+    router.push("/");
+    result.value = false;
+  }
+
+  // console.log(response.data.tokenInfo.token);
+
+  // console.log(email)
+  // console.log(password)
+  // if(email === "admin@example.com" && password === "Admin.123"){
+  //   result.value = true;
+  //   router.push("/dashboard");
+  // }else{
+  // router.push("/")
+  // result.value = false;
+  // }
 }
 </script>

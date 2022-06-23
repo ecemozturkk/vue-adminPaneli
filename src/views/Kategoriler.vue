@@ -6,28 +6,12 @@
     <div class="mt-4">
       <div class="mt-4 flex flex-row justify-center gap-x-5">
         <div
-          class="
-            w-1/2
-            max-w-sm
-            overflow-hidden
-            bg-white
-            border
-            rounded-md
-            shadow-md
-          "
+          class="w-1/2 max-w-sm overflow-hidden bg-white border rounded-md shadow-md"
         >
           <div style="float: right">
             <form>
               <div
-                class="
-                  flex
-                  items-center
-                  justify-between
-                  px-5
-                  py-3
-                  text-gray-700
-                  border-b
-                "
+                class="flex items-center justify-between px-5 py-3 text-gray-700 border-b"
               >
                 <h3 class="text-sm">Kategori Ekle</h3>
                 <button>
@@ -52,15 +36,7 @@
 
                 <div class="relative mt-2 rounded-md shadow-sm">
                   <span
-                    class="
-                      absolute
-                      inset-y-0
-                      left-0
-                      flex
-                      items-center
-                      pl-3
-                      text-gray-600
-                    "
+                    class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-600"
                   >
                     <svg
                       class="w-6 h-6"
@@ -81,47 +57,20 @@
                     type="text"
                     name="newCategoryName"
                     v-model="newCategory.name"
-                    class="
-                      w-full
-                      px-12
-                      py-2
-                      border-transparent
-                      rounded-md
-                      appearance-none
-                      focus:border-indigo-600
-                      focus:ring
-                      focus:ring-opacity-40
-                      focus:ring-indigo-500
-                    "
+                    class="w-full px-12 py-2 border-transparent rounded-md appearance-none focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
                   />
                 </div>
               </div>
             </form>
             <div class="flex items-center justify-between px-5 py-3">
               <button
-                class="
-                  px-3
-                  py-1
-                  text-sm text-gray-700
-                  bg-gray-200
-                  rounded-md
-                  hover:bg-gray-300
-                  focus:outline-none
-                "
+                class="px-3 py-1 text-sm text-gray-700 bg-gray-200 rounded-md hover:bg-gray-300 focus:outline-none"
               >
                 Iptal
               </button>
               <button
                 @click="addCategory()"
-                class="
-                  px-3
-                  py-1
-                  text-sm text-white
-                  bg-indigo-600
-                  rounded-md
-                  hover:bg-indigo-500
-                  focus:outline-none
-                "
+                class="px-3 py-1 text-sm text-white bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none"
               >
                 Ekle
               </button>
@@ -129,27 +78,11 @@
           </div>
         </div>
         <div
-          class="
-            w-1/2
-            max-w-sm
-            overflow-hidden
-            bg-white
-            border
-            rounded-md
-            shadow-md
-          "
+          class="w-1/2 max-w-sm overflow-hidden bg-white border rounded-md shadow-md"
         >
-          <form>
+          <form @submit="onDeleteSubmit">
             <div
-              class="
-                flex
-                items-center
-                justify-between
-                px-5
-                py-3
-                text-gray-700
-                border-b
-              "
+              class="flex items-center justify-between px-5 py-3 text-gray-700 border-b"
             >
               <h3 class="text-sm">Kategori Sil</h3>
               <button>
@@ -175,38 +108,18 @@
               <div class="inline-block relative w-64">
                 <select
                   v-model="willDeleteCategory"
-                  class="
-                    block
-                    appearance-none
-                    w-full
-                    bg-white
-                    border border-gray-400
-                    hover:border-gray-500
-                    px-4
-                    py-2
-                    pr-8
-                    rounded
-                    shadow
-                    leading-tight
-                    focus:outline-none focus:shadow-outline
-                  "
+                  class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
                 >
-                  <option v-for="category in categories"
-                :key="category.categoryId" :value="category.categoryId">
-                      {{ category.categoryName }}
+                  <option
+                    v-for="category in categories"
+                    :key="category.categoryId"
+                    :value="category.categoryId"
+                  >
+                    {{ category.categoryName }}
                   </option>
                 </select>
                 <div
-                  class="
-                    pointer-events-none
-                    absolute
-                    inset-y-0
-                    right-0
-                    flex
-                    items-center
-                    px-2
-                    text-gray-700
-                  "
+                  class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
                 >
                   <svg
                     class="fill-current h-4 w-4"
@@ -223,32 +136,16 @@
 
             <div class="flex items-center justify-between px-5 py-3">
               <button
-                class="
-                  px-3
-                  py-1
-                  text-sm text-gray-700
-                  bg-gray-200
-                  rounded-md
-                  hover:bg-gray-300
-                  focus:outline-none
-                "
+                class="px-3 py-1 text-sm text-gray-700 bg-gray-200 rounded-md hover:bg-gray-300 focus:outline-none"
               >
                 Iptal
               </button>
-              <button @click="deleteCategory()"
-                class="
-                  px-3
-                  py-1
-                  text-sm text-white
-                  bg-red-600
-                  rounded-md
-                  hover:bg-indigo-500
-                  focus:outline-none
-                "
+              <button
+                @click="deleteCategory"
+                class="px-3 py-1 text-sm text-white bg-red-600 rounded-md hover:bg-indigo-500 focus:outline-none"
               >
                 Sil
               </button>
-              
             </div>
           </form>
         </div>
@@ -263,41 +160,17 @@
             <thead class="border-b">
               <tr>
                 <th
-                  class="
-                    px-5
-                    py-3
-                    text-sm
-                    font-medium
-                    text-gray-100
-                    uppercase
-                    bg-indigo-800
-                  "
+                  class="px-5 py-3 text-sm font-medium text-gray-100 uppercase bg-indigo-800"
                 >
                   Kategori ID
                 </th>
                 <th
-                  class="
-                    px-5
-                    py-3
-                    text-sm
-                    font-medium
-                    text-gray-100
-                    uppercase
-                    bg-indigo-800
-                  "
+                  class="px-5 py-3 text-sm font-medium text-gray-100 uppercase bg-indigo-800"
                 >
                   Kategori Adi
                 </th>
                 <th
-                  class="
-                    px-5
-                    py-3
-                    text-sm
-                    font-medium
-                    text-gray-100
-                    uppercase
-                    bg-indigo-800
-                  "
+                  class="px-5 py-3 text-sm font-medium text-gray-100 uppercase bg-indigo-800"
                 >
                   Kategorinin Urunleri
                 </th>
@@ -332,8 +205,9 @@ import { ref, onMounted } from "vue";
 import axios from "axios";
 
 import { useTableData } from "../hooks/useTableData";
+import { autheader } from "../helpers/auth-helper";
 const { simpleTableData, paginatedTableData, wideTableData } = useTableData();
-const willDeleteCategory = ref("")
+const willDeleteCategory = ref("");
 
 const categories = ref([]);
 onMounted(async () => {
@@ -347,12 +221,21 @@ onMounted(async () => {
 const newCategory = ref({
   name: "",
 });
+
+const onDeleteSubmit = (e: any) => {
+  e.preventDefault();
+};
 const addCategory = async () => {
   const data = {
     categoryName: newCategory.value.name,
   };
+
   await axios
-    .post("http://kozmosapi-001-site1.itempurl.com/api/Categories", data)
+    .post("http://kozmosapi-001-site1.itempurl.com/api/Categories", data, {
+      headers: {
+        Authorization: "Bearer " + autheader(),
+      },
+    })
     .then((response) => {
       console.log("response", response);
       fetchData();
@@ -362,14 +245,25 @@ const addCategory = async () => {
 
 const deleteCategory = async () => {
   // alert(willDeleteCategory.value)
-  await axios
-    .delete(`http://kozmosapi-001-site1.itempurl.com/api/Categories/${willDeleteCategory.value}`)
-    .then((response) => {
-      console.log(response);
-      // categories.value = [...response.data];
-      fetchData();
-      
-    }).catch((e) => console.log(e));
+
+  try {
+    console.log(willDeleteCategory.value);
+    const response = await axios.delete(
+      `http://kozmosapi-001-site1.itempurl.com/api/Categories/${willDeleteCategory.value}`,
+      {
+        headers: {
+          Authorization: "Bearer " + autheader(),
+        },
+      }
+    );
+    console.log(response);
+    if (response.status === 200) {
+      //window.location.reload();
+      await fetchData();
+    }
+  } catch (error) {
+    console.log(error);
+  }
 };
 const fetchData = async () => {
   await axios

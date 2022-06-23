@@ -3,84 +3,114 @@
     <!-- Breadcrumb -->
     <!-- <Breadcrumb breadcrumb="Cards" /> -->
     <div class="mt-4 mb-3">
-      <h4 class="text-gray-700">Stacked</h4>
-
-      <div class="max-w-sm mt-6 overflow-hidden bg-white rounded shadow-lg">
-        <img
-          class="w-full"
-          src="https://picsum.photos/id/1016/384/234"
-          alt="Sunset in the mountains"
-        />
-        <div class="px-6 py-4">
-          <div class="mb-2 text-xl font-bold text-gray-900">
-            The Coldest Sunset
-          </div>
-          <p class="text-base text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus quia, nulla! Maiores et perferendis eaque,
-            exercitationem praesentium nihil.
-          </p>
-        </div>
-        <div class="px-6 pt-4 pb-2">
-          <span
-            class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full"
-            >#photography</span
-          >
-          <span
-            class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full"
-            >#travel</span
-          >
-          <span
-            class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full"
-            >#winter</span
-          >
-        </div>
-      </div>
+      <div
+        class="max-w-sm mt-6 overflow-hidden bg-white rounded shadow-lg"
+      ></div>
     </div>
-    <hr />
-    <div class="mt-5">
-      <h4 class="text-gray-700">Horizontal</h4>
+
+    <div class="mt-1">
+      <h4 class="font-bold text-xl text-gray-700">KUPONLAR</h4>
       <div class="w-full max-w-sm mt-6 lg:max-w-full lg:flex">
         <div
           class="flex-none h-48 overflow-hidden text-center bg-cover rounded-t lg:h-auto lg:w-48 lg:rounded-t-none lg:rounded-l"
-          style="background-image: url('https://picsum.photos/id/0/192/213')"
+          style="
+            background-image: url('https://cdn.dsmcdn.com/mnresize/500/-/ty265/product/media/images/20211208/13/7113463/20671892/1/1_org.jpg');
+          "
           title="Woman holding a mug"
         ></div>
         <div
           class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-200 rounded-b lg:border-l-0 lg:border-t lg:border-gray-200 lg:rounded-b-none lg:rounded-r"
         >
           <div class="mb-8">
-            <p class="flex items-center text-sm text-gray-600">
-              <svg
-                class="w-3 h-3 mr-2 text-gray-500 fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z"
-                />
-              </svg>
-              Members only
-            </p>
             <div class="mb-2 text-xl font-bold text-gray-900">
-              Can coffee make you a better developer?
+              Canon Fotoğraf Makinesi
             </div>
             <p class="text-base text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
+              Canon EOS 2000D 18-55 IS SLR Fotoğraf MakinesiCANON EOS 2000D
+            </p>
+            <p class="text-base text-gray-700">
+              Hoş arka plan bulanıklığına sahip anılar yaratmak ve paylaşmak
+              için kolay, sezgisel ve ideal ilk DSLR.
+            </p>
+            <p class="text-base text-gray-700">
+              24,1 Megapiksel EOS 2000D ile düşük ışık koşullarında bile
+              zahmetsizce detaylı DSLR kalitesinde fotoğraflar ve sinematik Full
+              HD filmler çekin.
             </p>
           </div>
           <div class="flex items-center">
             <img
-              class="w-10 h-10 mr-4 rounded-full"
-              src="https://via.placeholder.com/50"
+              class="w-22 h-32 mr-2 rounded-full"
+              src="https://percetakangoprint.com/wp-content/uploads/2020/06/Kupon.png"
               alt="Avatar of Jonathan Reinink"
             />
-            <div class="text-sm">
-              <p class="leading-none text-gray-900">Jonathan Reinink</p>
-              <p class="text-gray-600">Aug 18</p>
+            <p class="font-bold text-base text-gray-700">
+              Yeni üyelere ek %20 İndirim
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full max-w-sm mt-6 lg:max-w-full lg:flex">
+        <div
+          class="flex-none h-48 overflow-hidden text-center bg-cover rounded-t lg:h-auto lg:w-80 lg:rounded-t-none lg:rounded-l"
+          style="
+            background-image: url('https://productimages.hepsiburada.net/s/2/1500/9541089361970.jpg');
+          "
+          title="Woman holding a mug"
+        ></div>
+        <div
+          class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-200 rounded-b lg:border-l-0 lg:border-t lg:border-gray-200 lg:rounded-b-none lg:rounded-r"
+        >
+          <div class="mb-8">
+            <div class="mb-2 text-xl font-bold text-gray-900">
+              Ion Mustang Lp 4-İn-1 Pikap Kırmızı
             </div>
+            <p class="text-base text-gray-700">
+              Ford Mustang Lisanlı ürün.Şık 65 model Mustang Kruvazör görünümü.
+              AM/FM Radyo. USB bağlantısı sayesinde dijital müzik dosyalarınızı
+              dinleyebilme (MP3, WAV, WMA) uyumlu
+            </p>
+          </div>
+          <div class="flex items-center">
+            <img
+              class="w-22 h-32 mr-2 rounded-full"
+              src="https://percetakangoprint.com/wp-content/uploads/2020/06/Kupon.png"
+              alt="Avatar of Jonathan Reinink"
+            />
+            <p class="font-bold text-base text-gray-700">
+              1000 TL ve üzerine 300 TL ek kampanya
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full max-w-sm mt-6 lg:max-w-full lg:flex">
+        <div
+          class="flex-none h-48 overflow-hidden text-center bg-cover rounded-t lg:h-auto lg:w-80 lg:rounded-t-none lg:rounded-l"
+          style="
+            background-image: url('https://www.tabloshop.com/image/cache/webp/data/urun/unlu-ressamlar/BS-354__model_2-1000x1000.webp');
+          "
+          title="Woman holding a mug"
+        ></div>
+        <div
+          class="flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-200 rounded-b lg:border-l-0 lg:border-t lg:border-gray-200 lg:rounded-b-none lg:rounded-r"
+        >
+          <div class="mb-8">
+            <div class="mb-2 text-xl font-bold text-gray-900">Çığlık Tablo</div>
+            <p class="text-base text-gray-700">%100 Pamuk Kumaş</p>
+            <p class="text-base text-gray-700">
+              %100 pamuktan üretilen kanvas kumaşlar, uzun yıllar boyunca
+              dayanıklı bir biçimde ürününüzü kullanmanızı sağlar.
+            </p>
+          </div>
+          <div class="flex items-center">
+            <img
+              class="w-22 h-32 mr-2 rounded-full"
+              src="https://percetakangoprint.com/wp-content/uploads/2020/06/Kupon.png"
+              alt="Avatar of Jonathan Reinink"
+            />
+            <p class="font-bold text-base text-gray-700">
+              %10 ek indirim + Bez Çanta
+            </p>
           </div>
         </div>
       </div>
